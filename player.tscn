@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://ccbu8rxos4vs6" path="res://assets/particle_image.jpg" id="2_wqtbs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g0cxu"]
-size = Vector2(40, 80)
+size = Vector2(27, 29)
 
 [sub_resource type="QuadMesh" id="QuadMesh_8if30"]
 size = Vector2(40, 80)
@@ -20,13 +20,18 @@ orbit_velocity_max = 0.0
 script = ExtResource("1_0tbmt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6.5, 25.5)
 shape = SubResource("RectangleShape2D_g0cxu")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(6.10689, 25.5476)
 rotation = 3.14159
+scale = Vector2(0.694659, 0.36131)
 mesh = SubResource("QuadMesh_8if30")
 texture = ExtResource("2_blbr7")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+position = Vector2(6, 39)
+amount = 32
 process_material = SubResource("ParticleProcessMaterial_8m4kh")
 texture = ExtResource("2_wqtbs")
